@@ -14,3 +14,14 @@
     </div>
     <p>The Akan naming style is a Ghanian tradition whereby they name you according to the day of the week you were born on.This web application takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name.</p>
     <p>Fill the form below to find out what your Akan name is and click submit button.</p>
+    <div class="content">
+      <div class="container">
+        <form class="myform" onsubmit="return getAkanName()">
+          <label for="gender">
+            <p>Select your gender: </p>
+            Male
+            <input id="male-input" type="checkbox" name="gender" value="male" required>
+            Female
+            <input id="female-input" type="checkbox" name="gender" value="female" required>
+
+          </label>
