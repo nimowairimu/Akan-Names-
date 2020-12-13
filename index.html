@@ -6,33 +6,95 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
-  <body>
-    <div class="jumbotron">
-      <div class="container">
-       <h1><strong>AKAN NAMES</strong></h1>
+  <body><div class="jumbotron-fluid">
+    <div class="container">
+        <h1>AKAN NAMES</h1>
       </div>
     </div>
-    <p>The Akan naming style is a Ghanian tradition whereby they name you according to the day of the week you were born on.This web application takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name.</p>
-    <p>Fill the form below to find out what your Akan name is and click submit button.</p>
-    <div class="content">
-      <div class="container">
-        <form class="myform" onsubmit="return getAkanName()">
-          <label for="gender">
-            <p>Select your gender: </p>
-            Male
-            <input id="male-input" type="checkbox" name="gender" value="male" required>
-            Female
-            <input id="female-input" type="checkbox" name="gender" value="female" required>
-          </label>
-          <label for="year-of-birth">
-            Year:
-            <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
-          </label>
-          <label for="month-of-birth">
-            Month:
-            <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
-          </label>
-          <label for="day-of-birth">
-            Day:
-            <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
-          </label>
+    <div class="container-fluid">
+      <p> AKAN is a Ghanian naming style whereby they name children according to the day of the week you were born on.This web application takes your birthday details and calculates the day of the week you were born.</p>
+      <form class="form-group" onsubmit="event.preventDefault()">
+        <div class="form-group">
+          <label for="year">Enter your year of Birth:</label>
+          <input
+            id="year"
+            type="text"
+            class="form-control"
+            max="2020"
+            min="1500"
+            max-length="4"
+            size="4"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="month">Enter your month of Birth:</label>
+          <input
+            id="month"
+            type="text'"
+            class="form-control"
+            min="1"
+            max="12"
+            max-length="2"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="day">Enter the day you were born:</label>
+          <input
+            id="day"
+            type="text"
+            class="form-control"
+            min="1"
+            max="31"
+            max-length="2"
+            required
+          />
+          <div class="mycheckbox">
+            <label for="gender">Enter your gender:</label>
+            <br>
+            <label for="checkbox" class="checkbox-inline">
+              <input
+                type="checkbox"
+                value="female"
+                name="gender"
+                id="male"
+                required
+              />
+              Male </label
+            ><br />
+            <label for="checkbox" class="checkbox-inline">
+              <input
+                type="checkbox"
+                value="female"
+                name="gender"
+                id="female"
+                required
+              />
+              Female
+            </label>
+          </div>
+        </div>
+        <button
+          type="submit"
+          id="submit"
+          class="btn btn-primary"
+          onclick="getAkanName()"
+          value="submit"
+        >
+          Submit
+        </button>
+        <button
+          type="clear"
+          class="btn btn-danger mybtn"
+          value="reset"
+          onclick="refreshPage()"
+        >
+          clear
+        </button>
+      </form>
+
+<script src="js/script.js" ></script>
+
+</body>
+</html>
