@@ -2,7 +2,6 @@
 var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Afua","Afua","Ama"];
 
-//functions
 
 var day = function(){
     century = parseInt(document.getElementById("century").value);
