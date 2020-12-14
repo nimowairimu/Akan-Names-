@@ -1,6 +1,9 @@
+body {
+  background-image:url("../image.jpg");
+}
 
 .overlay{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color:white;
   border-radius: 5px 0 0 5px;
   height: 670px;
 }
@@ -8,11 +11,12 @@
 text{
   font-size: 20px;
   font-family: 'Khula', sans-serif;
+  color: black;
 }
 .left{
-  background-image: url("../savannah.jpg");
   background-size: center;
-  height: 670px;
+  height: 800px;
   border-radius: 10px 0 0 10px;
   margin: 0;
+  width: 600px;
 }
