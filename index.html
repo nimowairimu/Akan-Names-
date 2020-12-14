@@ -2,99 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>AKAN NAMES</title>
+    <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
-  <body><div class="jumbotron-fluid">
-    <div class="container">
-        <h1>AKAN NAMES</h1>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <p> AKAN is a Ghanian naming style whereby they name children according to the day of the week you were born on.This web application takes your birthday details and calculates the day of the week you were born.</p>
-      <form class="form-group" onsubmit="event.preventDefault()">
-        <div class="form-group">
-          <label for="year">Enter your year of Birth:</label>
-          <input
-            id="year"
-            type="text"
-            class="form-control"
-            max="2020"
-            min="1500"
-            max-length="4"
-            size="4"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="month">Enter your month of Birth:</label>
-          <input
-            id="month"
-            type="text'"
-            class="form-control"
-            min="1"
-            max="12"
-            max-length="2"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="day">Enter the day you were born:</label>
-          <input
-            id="day"
-            type="text"
-            class="form-control"
-            min="1"
-            max="31"
-            max-length="2"
-            required
-          />
-          <div class="mycheckbox">
-            <label for="gender">Enter your gender:</label>
+  <body>
+  <div class="background">
+   <div class="header">
+    <h1><strong>AKAN NAMES</strong></h1>
+    <p>AKAN is a Ghanian naming style whereby they name children according to the day of the week you were born on.<em>So Cool!</em>.<br>This web application takes your birthday details and calculates the day of the week you were born.</p>
+   </div>
+    <form>
+        <div class="Form">
+            <label for="Century">Century</label>
+            <input type="text" class="form-control" id="century" placeholder="Enter century" required>
             <br>
-            <label for="checkbox" class="checkbox-inline">
-              <input
-                type="checkbox"
-                value="female"
-                name="gender"
-                id="male"
-                required
-              />
-              Male </label
-            ><br />
-            <label for="checkbox" class="checkbox-inline">
-              <input
-                type="checkbox"
-                value="female"
-                name="gender"
-                id="female"
-                required
-              />
-              Female
-            </label>
-          </div>
-        </div>
-        <button
-          type="submit"
-          id="submit"
-          class="btn btn-primary"
-          onclick="getAkanName()"
-          value="submit"
-        >
-          Submit
-        </button>
-        <button
-          type="clear"
-          class="btn btn-danger mybtn"
-          value="reset"
-          onclick="refreshPage()"
-        >
-          clear
-        </button>
-      </form>
-
+            <label for="Year">Year</label>
+            <input type="year" class="form-control" id="year" placeholder="Enter year of Birth" required>
+            <br>
+            <label for="Month">Month</label>
+            <input type="number" class="form-control" id="month" placeholder="Enter month of Birth" required>
+            <br>
+            <label for="Day">Date</label>
+            <input type="text" class="form-control" id="date" placeholder="Enter Day of Birth" required>
+            <br>
+         <div class="form-group form-check">
+            <label for="Gender">Select Your Gender</label>
+            <br>
+            <input type="checkbox" name="one" class="form-check-input" value="" id="gender">
+            <label for="male">Male</label>
+            <br>
+            <input type="checkbox" name="one" class="form-check-input" value="" id="gender">
+            <label for="female">Female</label>
+         </div>
+       </div>
+  </div>
+        <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfTheWeek();">Submit</button></a>
+        <h1 id="result"></h1>
+    </div>
+    </form>
+   </div>
 <script src="js/script.js" ></script>
-
 </body>
 </html>
