@@ -1,26 +1,18 @@
-h1{
-  text-align: center;
-  font-family:sans-serif;
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px 0 0 5px;
+  height: 670px;
 }
 
-h3{
-  text-align: center;
+text{
+  font-size: 20px;
+  font-family: 'Khula', sans-serif;
 }
-h2{
-  text-align: center;
+.left{
+  background-image: url("../savannah.jpg");
+  background-size: center;
+  height: 670px;
+  border-radius: 10px 0 0 10px;
+  margin: 0;
 }
-textarea{
-  margin-top: 10px;
-}
-#output{
-  width: 400px;
-  height: 50px;
-}
-form class="myform" onsubmit="return getAkanName()">
-  <label for="gender">
-    <p>Select your gender: </p>
-    Male
-    <input id="male-input" type="checkbox" name="gender" value="male" required>
-    Female
-    <input id="female-input" type="checkbox" name="gender" value="female" required>
-  </label>
