@@ -16,9 +16,14 @@
   You can view the live application by following this link https://nimowairimu.github.io/akan-name-/
 
 #   BDD.
-   BDD(Behavior Driven Development) integration plugin for CakePHP2
-
-  Copyright(c) 2020 Wairimu Mungai. Licensed under the MIT license    
+  1.User enters Birth details , that is;
+        Century born
+        Date of Birth
+        Month Of Birth
+        Year of Birth
+  2.Calculate day of the week given the bithday input.
+  3.Given the gender output the Akan name.
+              
 #   TECHNOLOGY USED
   HTML
   CSS
